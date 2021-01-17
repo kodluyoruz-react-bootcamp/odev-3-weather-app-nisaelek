@@ -1,0 +1,16 @@
+*{
+    margin:0;
+}
+.weatherList{
+    display: flex;
+    margin-top: 25px;
+}
+.dropdown{
+    text-align: center;
+    justify-content: center;
+    margin-left: 40%;
+    margin-top: 25px;
+}
+.card{
+    margin-left: 10px;
+}
