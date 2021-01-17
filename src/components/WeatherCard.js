@@ -10,7 +10,7 @@ function WeatherCard({day}) {
 				src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`}
 				alt=""
 			/></p>
-          <p className="card-text">{day.temp.max}{day.temp.min} </p>
+          <p className="card-text">{day.temp.max}-{day.temp.min} </p>
         </div>
       </div>
     )
