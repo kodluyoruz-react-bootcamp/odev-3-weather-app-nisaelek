@@ -649,4 +649,3 @@ export const cities = [
 	},
 ];
 
-export const API_ENDPOINT = ``;
