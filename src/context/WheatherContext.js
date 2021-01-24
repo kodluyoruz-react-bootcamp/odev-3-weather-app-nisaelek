@@ -8,11 +8,11 @@ export const WeatherProvider = ({ children }) => {
 
 
 	useEffect(() => {
-		const url = `http://api.openweathermap.org/data/2.5/forecast/daily?q=${selected}&appid=6764f39e03912e6b993d63f9379ed1ef&units=metric`;
+		const url = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${selected}&appid=6764f39e03912e6b993d63f9379ed1ef&units=metric`;
 
-		axios(url).then((res) =>{
-			setWeather(res.data);
-			console.log(res.data);
+		axios(url).then((response) =>{
+			setWeather(response.data);
+			console.log(response.data);
 
 		} ).catch((err => console.log(err.response.data)));
 	}, [selected]);
